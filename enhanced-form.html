@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    form {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced HTML5 Form</h1>
+  <p>Demonstrating structured content, media, and accessible form elements.</p>
+</header>
+
+<main>
+  <!-- Media Example -->
+  <section>
+    <h2>About Our Services</h2>
+    <p>We offer a variety of solutions to meet your needs:</p>
+    <ul>
+      <li>Web Development</li>
+      <li>Graphic Design</li>
+      <li>Online Training</li>
+    </ul>
+    <img src="https://via.placeholder.com/500x200" alt="Sample banner image">
+  </section>
+
+  <!-- Table Example -->
+  <section>
+    <h2>Pricing Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Development</td>
+          <td>$500</td>
+          <td>2 weeks</td>
+        </tr>
+        <tr>
+          <td>Graphic Design</td>
+          <td>$300</td>
+          <td>1 week</td>
+        </tr>
+        <tr>
+          <td>Online Training</td>
+          <td>$150</td>
+          <td>3 days</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Form Example -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter a valid email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g., +1234567890" pattern="^\+?[0-9\s\-]{7,15}$" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="username">Username (Read-Only):</label>
+      <input type="text" id="username" name="username" value="User123" readonly>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose an option--</option>
+        <option value="web">Web Development</option>
+        <option value="design">Graphic Design</option>
+        <option value="training">Online Training</option>
+      </select>
+
+      <label for="message">Additional Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+
+      <label>
+        <input type="checkbox" name="terms" required>
+        I agree to the terms and conditions
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
